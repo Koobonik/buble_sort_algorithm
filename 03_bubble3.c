@@ -42,17 +42,17 @@ int main(void)
 	// scanf("%d", &nx);
 	x = calloc(nx, sizeof(int)); /* 요솟수 nx인 int 형 배열을 생성 */
 
-	for (i = 0; i < nx; i++) {
-		printf("x[%d] :", i);
-		x[i] = rand();
-		// scanf("%d", &x[i]);
-	}
+	// for (i = 0; i < nx; i++) {
+	// 	printf("x[%d] :", i);
+	// 	x[i] = rand();
+	// 	// scanf("%d", &x[i]);
+	// }
 
 	bubble(x, nx); /* 배열 x를 단순 교환 정렬 */
 
 	puts("오름차순으로 정렬했습니다.");
-	for (i = 0; i < nx; i++)
-		printf("x[%d] = %d\n", i, x[i]);
+	// for (i = 0; i < nx; i++)
+	// 	printf("x[%d] = %d\n", i, x[i]);
 
 	free(x); /* 배열을 삭제 */
 	}

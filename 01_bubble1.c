@@ -34,17 +34,17 @@ int main(void)
 		nx = 10000;
 		x = calloc(nx, sizeof(int));	/* 요소의 개수가 nx인 int형 배열을 생성 */
 
-		for (i = 0; i < nx; i++) {
-			printf("x[%d] : ", i);
-			x[i] = rand();
-			// scanf("%d", &x[i]);
-		}
+		// for (i = 0; i < nx; i++) {
+		// 	printf("x[%d] : ", i);
+		// 	x[i] = rand();
+		// 	// scanf("%d", &x[i]);
+		// }
 
 		bubble(x, nx);		/* 배열 x를 버블 정렬 */
 
 		puts("오름차순으로 정렬했습니다.");
-		for (i = 0; i < nx; i++)
-			printf("x[%d] = %d\n", i, x[i]);
+		// for (i = 0; i < nx; i++)
+		// 	printf("x[%d] = %d\n", i, x[i]);
 	
 		free(x);			/* 배열 해제 */
 	}
