@@ -37,7 +37,7 @@ int main(void)
 
 	puts("단순 교환 정렬");
 	printf("요솟수: ");
-	nx = 10000;
+	nx = 30000;
 	// scanf("%d", &nx);
 	x = calloc(nx, sizeof(int)); /* 요솟수 nx인 int 형 배열을 생성 */
 
